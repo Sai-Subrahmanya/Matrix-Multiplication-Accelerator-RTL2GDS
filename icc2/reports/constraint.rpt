@@ -1,0 +1,49 @@
+****************************************
+Report : constraint
+        -verbose
+        -all_violators
+Design : mma
+Version: W-2024.09-SP1
+****************************************
+
+   late_timing
+   -----------
+
+No paths.
+
+   early_timing
+   -----------
+
+No paths.
+
+   Mode: func Corner: nom
+   Scenario: func.nom
+    Net: MatrixC[51]
+    max_transition         0.16
+  - Transition Time        0.13
+  --------------------------------
+    Slack                  0.03 (MET)
+
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Mode: func Corner: nom
+   Scenario: func.nom
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+
+   Mode: func Corner: nom
+   Scenario: func.nom
+  ---------------------------------------------------------------------------
+   Number of min_capacitance violation(s): 0
+
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+
+  ---------------------------------------------------------------------------
+   Number of min_pulse_width violation(s): 0
+   Total number of violation(s): 0
+1

@@ -1,0 +1,6 @@
+../results/mma_icc2.spef.tlu_max_125.spef for scenarios: 
+	 scenario: func.nom, corner type: late
+
+../results/mma_icc2.spef.tlu_min_125.spef for scenarios: 
+	 scenario: func.nom, corner type: early
+

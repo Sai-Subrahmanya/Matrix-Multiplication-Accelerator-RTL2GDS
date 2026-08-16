@@ -1,0 +1,90 @@
+MMA ICC2 final compact summary
+
+Generated reports:
+  area.rpt
+  power.rpt
+  qor.rpt
+  timing.rpt
+  constraint.rpt
+  physical.rpt
+  signoff.rpt
+
+--- Area/utilization key lines ---
+Report : report_utilization
+Utilization Ratio:			0.7066
+Utilization options:
+Total Area:				5234.6040
+Total Capacity Area:			5234.6040
+Total Area of cells:			3698.5576
+Total Area of excluded objects:		0.0000
+Ratio of excluded objects:		0.0000
+Utilization of site-rows with:
+
+--- Power key lines ---
+Total Dynamic Power      = 9.21e+07 pW (100.0%)
+Cell Leakage Power       = 6.43e+07 pW
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+Total                     7.17e+07 pW            2.04e+07 pW            6.43e+07 pW            1.56e+08 pW
+
+--- QoR key lines ---
+Critical Path Length:              5.29
+Critical Path Slack:               4.27
+Critical Path Clk Period:         10.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+Critical Path Length:              0.38
+Critical Path Slack:               7.41
+Critical Path Clk Period:         10.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+Critical Path Length:              0.55
+Critical Path Slack:               8.97
+Critical Path Clk Period:         10.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+
+--- Constraint key lines ---
+    max_transition         0.16
+   Number of max_transition violation(s): 0
+   Number of max_capacitance violation(s): 0
+   Total number of violation(s): 0
+
+--- Signoff key lines ---
+Start checking for open nets ... 
+Total number of open nets = 0, of which 0 are frozen
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used   27  Alloctr   28  Proc 5696 
+	@@@@@@@ TOTAL VIOLATIONS =	0
+Total number of open nets = 0, of which 0 are frozen
+Total number of DRCs = 0
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+Number of missing vias: 0
+Number of missing vias: 0
+No errors found.

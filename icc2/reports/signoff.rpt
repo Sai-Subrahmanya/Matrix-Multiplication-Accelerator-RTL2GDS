@@ -1,0 +1,203 @@
+Cell Min-Routing-Layer = M2
+Cell Max-Routing-Layer = M8
+Turn off antenna since no rule is specified
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Warning: Cannot find a default contact code for layer CO. (ZRT-022)
+Warning: Port VDD of cell mma is unplaced.  This may impact routing result. (ZRT-740)
+Warning: Port VSS of cell mma is unplaced.  This may impact routing result. (ZRT-740)
+Warning: Ignore 2 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 5.32 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 5.32 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+Warning: Standard cell pin AOINVX2_RVT/VDDG has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOBUFX2_RVT/VDDG has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOINVX1_RVT/VDDG has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOBUFX1_RVT/VDDG has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOBUFX4_RVT/VDDG has no valid via regions. (ZRT-044)
+Warning: Standard cell pin AOINVX4_RVT/VDDG has no valid via regions. (ZRT-044)
+
+
+Start checking for open nets ... 
+
+Total number of nets = 1455, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+
+Check 1455 nets, 0 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used   27  Alloctr   28  Proc 5696 
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :	 true                
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.diode_libcell_names                              :	 saed32_rvt|saed32_rvt_std/ANTENNA_RVT
+detail.eco_route_use_soft_spacing_for_timing_optimization:	 true                
+detail.timing_driven                                    :	 false               
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+Begin full DRC check ...
+
+Information: Using 4 threads for routing. (ZRT-444)
+Checked	1/4 Partitions, Violations =	0
+Checked	2/4 Partitions, Violations =	0
+Checked	3/4 Partitions, Violations =	0
+Checked	4/4 Partitions, Violations =	0
+[DRC CHECK] Elapsed real time: 0:00:00 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DRC CHECK] Total (MB): Used  116  Alloctr  117  Proc 5696 
+Warning: No antenna rules defined, Skip antenna analysis. (ZRT-309)
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+
+
+Total Wire Length =                    21055 micron
+Total Number of Contacts =             9779
+Total Number of Wires =                9061
+Total Number of PtConns =              1227
+Total Number of Routed Wires =       8967
+Total Routed Wire Length =           20932 micron
+Total Number of Routed Contacts =       9779
+	Layer             M1 :        165 micron
+	Layer             M2 :       8058 micron
+	Layer             M3 :       7641 micron
+	Layer             M4 :       3193 micron
+	Layer             M5 :       1825 micron
+	Layer             M6 :         50 micron
+	Layer             M7 :          0 micron
+	Layer             M8 :          0 micron
+	Layer             M9 :          0 micron
+	Layer           MRDL :          0 micron
+	Via        VIA56SQ_C :          2
+	Via   VIA45SQ_C(rot) :        267
+	Via        VIA34SQ_C :        635
+	Via   VIA34SQ_C(rot) :          1
+	Via        VIA23SQ_C :         16
+	Via   VIA23SQ_C(rot) :       4335
+	Via        VIA12SQ_C :       4044
+	Via   VIA12SQ_C(rot) :        416
+	Via       VIA12BAR_C :         43
+	Via    VIA12BAR(rot) :          1
+	Via    VIA12SQ_C_2x1 :         19
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.19% (19 / 9779 vias)
+ 
+    Layer VIA1       =  0.42% (19     / 4523    vias)
+        Weight 1     =  0.42% (19      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 99.58% (4504    vias)
+    Layer VIA2       =  0.00% (0      / 4351    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4351    vias)
+    Layer VIA3       =  0.00% (0      / 636     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (636     vias)
+    Layer VIA4       =  0.00% (0      / 267     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (267     vias)
+    Layer VIA5       =  0.00% (0      / 2       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2       vias)
+ 
+  Total double via conversion rate    =  0.19% (19 / 9779 vias)
+ 
+    Layer VIA1       =  0.42% (19     / 4523    vias)
+    Layer VIA2       =  0.00% (0      / 4351    vias)
+    Layer VIA3       =  0.00% (0      / 636     vias)
+    Layer VIA4       =  0.00% (0      / 267     vias)
+    Layer VIA5       =  0.00% (0      / 2       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.19% (19 / 9779 vias)
+ 
+    Layer VIA1       =  0.42% (19     / 4523    vias)
+        Weight 1     =  0.42% (19      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 99.58% (4504    vias)
+    Layer VIA2       =  0.00% (0      / 4351    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4351    vias)
+    Layer VIA3       =  0.00% (0      / 636     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (636     vias)
+    Layer VIA4       =  0.00% (0      / 267     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (267     vias)
+    Layer VIA5       =  0.00% (0      / 2       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2       vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 1455, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = no antenna rules defined
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+
+Checking secondary net through power switch is enabled. 
+Secondary net will be checked together from primary net. They will be treated as the same net
+Primary Net : VDD    Secondary Net:
+Primary Net : VSS    Secondary Net:
+Loading cell instances...
+Number of Standard Cells: 7143
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 0
+Loading P/G wires and vias...
+Number of VDD Wires: 58
+Number of VDD Vias: 744
+Number of VDD Terminals: 0
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VSS Wires: 263
+Number of VSS Vias: 940
+Number of VSS Terminals: 0
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Overall runtime: 0 seconds.
+Check net VDD vias...
+Number of missing vias: 0
+Checking net VDD vias took 0 seconds.
+Check net VSS vias...
+Number of missing vias: 0
+Checking net VSS vias took 0 seconds.
+Overall runtime: 0 seconds.
+CPU usage for check_pg_drc: 0.85 seconds ( 0.00 hours)
+Elapsed time for check_pg_drc: 0.26 seconds ( 0.00 hours)
+No errors found.

@@ -1,0 +1,768 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 10
+        -report_by design
+Design : mma
+Version: W-2024.09-SP1
+****************************************
+
+  Startpoint: MatrixA[14] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[31] (rising edge-triggered flip-flop clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  input external delay                             2.0000      2.0041 f
+  MatrixA[14] (in)                                 0.0000      2.0041 f
+  U595/Y (AND4X1_RVT)                              0.3309      2.3349 f
+  ctmTdsLR_2_47/Y (NOR2X1_RVT)                     0.1881      2.5230 r
+  intadd_3/U6/S (FADDX1_RVT)                       0.3094      2.8324 f
+  intadd_41/U2/S (FADDX1_RVT)                      0.3669      3.1994 r
+  U658/Y (AOI222X1_RVT)                            0.3012      3.5005 f
+  U672/CO (FADDX1_RVT)                             0.1640      3.6645 f
+  U660/Y (INVX0_RVT)                               0.1068      3.7713 r
+  U661/Y (AO222X1_RVT)                             0.2760      4.0473 r
+  U662/Y (AO222X1_RVT)                             0.2482      4.2955 r
+  U663/Y (XOR2X1_RVT)                              0.2805      4.5761 f
+  ctmTdsLR_1_83/Y (XOR3X1_RVT)                     0.1842      4.7603 r
+  U666/Y (XOR2X1_RVT)                              0.3271      5.0873 f
+  U667/Y (AO22X1_RVT)                              0.2101      5.2975 f
+  MatrixC_reg[31]/RSTB (DFFSSRX1_RVT)              0.0000      5.2975 f
+  data arrival time                                            5.2975
+
+  clock Clock (rise edge)                         10.0000     10.0000
+  clock network delay (propagated)                 0.0045     10.0045
+  MatrixC_reg[31]/CLK (DFFSSRX1_RVT)               0.0000     10.0045 r
+  clock uncertainty                               -0.2000      9.8045
+  library setup time                              -0.2375      9.5670
+  data required time                                           9.5670
+  ----------------------------------------------------------------------------
+  data required time                                           9.5670
+  data arrival time                                           -5.2975
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  4.2695
+
+
+
+  Startpoint: MatrixA[9] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[15] (rising edge-triggered flip-flop clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  input external delay                             2.0000      2.0041 f
+  MatrixA[9] (in)                                  0.0000      2.0041 f
+  U805/Y (AND2X1_RVT)                              0.2157      2.2198 f
+  U809/S (FADDX1_RVT)                              0.3298      2.5496 r
+  intadd_12/U4/S (FADDX1_RVT)                      0.3083      2.8579 f
+  intadd_43/U2/S (FADDX1_RVT)                      0.3411      3.1990 r
+  U858/Y (AOI222X1_RVT)                            0.3039      3.5029 f
+  U872/CO (FADDX1_RVT)                             0.1684      3.6713 f
+  U860/Y (INVX0_RVT)                               0.1089      3.7802 r
+  U861/Y (AO222X1_RVT)                             0.2737      4.0539 r
+  U862/Y (AO222X1_RVT)                             0.2532      4.3071 r
+  U863/Y (XOR2X1_RVT)                              0.2804      4.5875 f
+  ctmTdsLR_1_85/Y (XOR3X1_RVT)                     0.1818      4.7693 r
+  U866/Y (XOR2X1_RVT)                              0.3180      5.0873 f
+  U867/Y (AO22X1_RVT)                              0.2021      5.2894 f
+  MatrixC_reg[15]/RSTB (DFFSSRX1_RVT)              0.0000      5.2894 f
+  data arrival time                                            5.2894
+
+  clock Clock (rise edge)                         10.0000     10.0000
+  clock network delay (propagated)                 0.0012     10.0012
+  MatrixC_reg[15]/CLK (DFFSSRX1_RVT)               0.0000     10.0012 r
+  clock uncertainty                               -0.2000      9.8012
+  library setup time                              -0.2390      9.5622
+  data required time                                           9.5622
+  ----------------------------------------------------------------------------
+  data required time                                           9.5622
+  data arrival time                                           -5.2894
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  4.2728
+
+
+
+  Startpoint: MatrixB[5] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[63] (rising edge-triggered flip-flop clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  input external delay                             2.0000      2.0041 f
+  MatrixB[5] (in)                                  0.0000      2.0041 f
+  U195/Y (AND4X1_RVT)                              0.3312      2.3352 f
+  ctmTdsLR_2_15/Y (NOR2X1_RVT)                     0.1900      2.5252 r
+  intadd_7/U6/S (FADDX1_RVT)                       0.3111      2.8364 f
+  intadd_37/U2/S (FADDX1_RVT)                      0.3724      3.2087 r
+  U258/Y (AOI222X1_RVT)                            0.3039      3.5127 f
+  U272/CO (FADDX1_RVT)                             0.1674      3.6801 f
+  U260/Y (INVX0_RVT)                               0.1048      3.7849 r
+  U261/Y (AO222X1_RVT)                             0.2730      4.0579 r
+  U262/Y (AO222X1_RVT)                             0.2538      4.3117 r
+  U263/Y (XOR2X1_RVT)                              0.2828      4.5945 f
+  ctmTdsLR_1_79/Y (XOR3X1_RVT)                     0.1782      4.7727 r
+  U266/Y (XOR2X1_RVT)                              0.2901      5.0627 f
+  U267/Y (AO22X1_RVT)                              0.1937      5.2565 f
+  MatrixC_reg[63]/RSTB (DFFSSRX1_RVT)              0.0000      5.2565 f
+  data arrival time                                            5.2565
+
+  clock Clock (rise edge)                         10.0000     10.0000
+  clock network delay (propagated)                 0.0016     10.0016
+  MatrixC_reg[63]/CLK (DFFSSRX1_RVT)               0.0000     10.0016 r
+  clock uncertainty                               -0.2000      9.8016
+  library setup time                              -0.2392      9.5623
+  data required time                                           9.5623
+  ----------------------------------------------------------------------------
+  data required time                                           9.5623
+  data arrival time                                           -5.2565
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  4.3058
+
+
+
+  Startpoint: MatrixB[13] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[55] (rising edge-triggered flip-flop clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  input external delay                             2.0000      2.0041 f
+  MatrixB[13] (in)                                 0.0000      2.0041 f
+  U340/Y (AND2X1_RVT)                              0.2106      2.2146 f
+  intadd_38/U4/S (FADDX1_RVT)                      0.3106      2.5253 r
+  U350/Y (INVX0_RVT)                               0.0722      2.5974 f
+  U379/CO (FADDX1_RVT)                             0.2005      2.7980 f
+  U356/Y (INVX0_RVT)                               0.1207      2.9187 r
+  U357/Y (AO222X1_RVT)                             0.2838      3.2024 r
+  U358/Y (AOI222X1_RVT)                            0.2923      3.4947 f
+  U372/CO (FADDX1_RVT)                             0.1613      3.6560 f
+  U360/Y (INVX0_RVT)                               0.1051      3.7611 r
+  U361/Y (AO222X1_RVT)                             0.2748      4.0359 r
+  U362/Y (AO222X1_RVT)                             0.2546      4.2905 r
+  U363/Y (XOR2X1_RVT)                              0.2812      4.5717 f
+  ctmTdsLR_1_80/Y (XOR3X1_RVT)                     0.1825      4.7542 r
+  U366/Y (XOR2X1_RVT)                              0.2977      5.0519 f
+  U367/Y (AO22X1_RVT)                              0.1918      5.2437 f
+  MatrixC_reg[55]/RSTB (DFFSSRX1_RVT)              0.0000      5.2437 f
+  data arrival time                                            5.2437
+
+  clock Clock (rise edge)                         10.0000     10.0000
+  clock network delay (propagated)                 0.0045     10.0045
+  MatrixC_reg[55]/CLK (DFFSSRX1_RVT)               0.0000     10.0045 r
+  clock uncertainty                               -0.2000      9.8045
+  library setup time                              -0.2369      9.5676
+  data required time                                           9.5676
+  ----------------------------------------------------------------------------
+  data required time                                           9.5676
+  data arrival time                                           -5.2437
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  4.3239
+
+
+
+  Startpoint: MatrixA[33] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[71] (rising edge-triggered flip-flop clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  input external delay                             2.0000      2.0041 f
+  MatrixA[33] (in)                                 0.0000      2.0041 f
+  U101/Y (AND2X1_RVT)                              0.2104      2.2145 f
+  U105/S (FADDX1_RVT)                              0.3288      2.5433 r
+  intadd_33/U4/S (FADDX1_RVT)                      0.3106      2.8539 f
+  intadd_36/U2/S (FADDX1_RVT)                      0.3329      3.1868 r
+  U155/Y (AOI222X1_RVT)                            0.3032      3.4900 f
+  U172/CO (FADDX1_RVT)                             0.1676      3.6575 f
+  U157/Y (INVX0_RVT)                               0.1038      3.7613 r
+  U158/Y (AO222X1_RVT)                             0.2757      4.0370 r
+  U159/Y (AO222X1_RVT)                             0.2637      4.3007 r
+  U160/Y (XOR2X1_RVT)                              0.2904      4.5911 f
+  ctmTdsLR_1_78/Y (XOR3X1_RVT)                     0.1823      4.7735 r
+  U163/Y (XOR2X1_RVT)                              0.2759      5.0494 f
+  U166/Y (AO22X1_RVT)                              0.1809      5.2303 f
+  MatrixC_reg[71]/RSTB (DFFSSRX1_RVT)              0.0000      5.2303 f
+  data arrival time                                            5.2303
+
+  clock Clock (rise edge)                         10.0000     10.0000
+  clock network delay (propagated)                 0.0045     10.0045
+  MatrixC_reg[71]/CLK (DFFSSRX1_RVT)               0.0000     10.0045 r
+  clock uncertainty                               -0.2000      9.8045
+  library setup time                              -0.2366      9.5679
+  data required time                                           9.5679
+  ----------------------------------------------------------------------------
+  data required time                                           9.5679
+  data arrival time                                           -5.2303
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  4.3376
+
+
+
+  Startpoint: MatrixA[9] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[23] (rising edge-triggered flip-flop clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  input external delay                             2.0000      2.0041 f
+  MatrixA[9] (in)                                  0.0000      2.0041 f
+  U705/Y (AND2X1_RVT)                              0.2142      2.2183 f
+  U709/S (FADDX1_RVT)                              0.3302      2.5485 r
+  intadd_15/U4/S (FADDX1_RVT)                      0.3160      2.8646 f
+  intadd_42/U2/S (FADDX1_RVT)                      0.3361      3.2006 r
+  U758/Y (AOI222X1_RVT)                            0.3000      3.5006 f
+  U772/CO (FADDX1_RVT)                             0.1641      3.6647 f
+  U760/Y (INVX0_RVT)                               0.1076      3.7723 r
+  U761/Y (AO222X1_RVT)                             0.2688      4.0411 r
+  U762/Y (AO222X1_RVT)                             0.2451      4.2862 r
+  U763/Y (XOR2X1_RVT)                              0.2837      4.5699 f
+  ctmTdsLR_1_84/Y (XOR3X1_RVT)                     0.1889      4.7588 r
+  U766/Y (XOR2X1_RVT)                              0.2779      5.0367 f
+  U767/Y (AO22X1_RVT)                              0.1817      5.2183 f
+  MatrixC_reg[23]/RSTB (DFFSSRX1_RVT)              0.0000      5.2183 f
+  data arrival time                                            5.2183
+
+  clock Clock (rise edge)                         10.0000     10.0000
+  clock network delay (propagated)                 0.0012     10.0012
+  MatrixC_reg[23]/CLK (DFFSSRX1_RVT)               0.0000     10.0012 r
+  clock uncertainty                               -0.2000      9.8012
+  library setup time                              -0.2393      9.5619
+  data required time                                           9.5619
+  ----------------------------------------------------------------------------
+  data required time                                           9.5619
+  data arrival time                                           -5.2183
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  4.3436
+
+
+
+  Startpoint: MatrixA[9] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[7] (rising edge-triggered flip-flop clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  input external delay                             2.0000      2.0041 f
+  MatrixA[9] (in)                                  0.0000      2.0041 f
+  U905/Y (AND2X1_RVT)                              0.2117      2.2158 f
+  U909/S (FADDX1_RVT)                              0.3343      2.5501 r
+  intadd_9/U4/S (FADDX1_RVT)                       0.3099      2.8600 f
+  intadd_44/U2/S (FADDX1_RVT)                      0.3350      3.1950 r
+  U958/Y (AOI222X1_RVT)                            0.3024      3.4974 f
+  U972/CO (FADDX1_RVT)                             0.1637      3.6610 f
+  U960/Y (INVX0_RVT)                               0.1079      3.7690 r
+  U961/Y (AO222X1_RVT)                             0.2754      4.0444 r
+  U962/Y (AO222X1_RVT)                             0.2559      4.3002 r
+  U963/Y (XOR2X1_RVT)                              0.2841      4.5843 f
+  ctmTdsLR_1_86/Y (XOR3X1_RVT)                     0.1775      4.7618 r
+  U966/Y (XOR2X1_RVT)                              0.2737      5.0355 f
+  U967/Y (AO22X1_RVT)                              0.1814      5.2169 f
+  MatrixC_reg[7]/RSTB (DFFSSRX1_RVT)               0.0000      5.2169 f
+  data arrival time                                            5.2169
+
+  clock Clock (rise edge)                         10.0000     10.0000
+  clock network delay (propagated)                 0.0011     10.0011
+  MatrixC_reg[7]/CLK (DFFSSRX1_RVT)                0.0000     10.0011 r
+  clock uncertainty                               -0.2000      9.8011
+  library setup time                              -0.2391      9.5620
+  data required time                                           9.5620
+  ----------------------------------------------------------------------------
+  data required time                                           9.5620
+  data arrival time                                           -5.2169
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  4.3451
+
+
+
+  Startpoint: MatrixA[21] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[47] (rising edge-triggered flip-flop clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  input external delay                             2.0000      2.0041 f
+  MatrixA[21] (in)                                 0.0000      2.0041 f
+  U405/Y (AND2X1_RVT)                              0.2112      2.2153 f
+  U409/S (FADDX1_RVT)                              0.3302      2.5455 r
+  intadd_24/U4/S (FADDX1_RVT)                      0.3108      2.8563 f
+  intadd_39/U2/S (FADDX1_RVT)                      0.3382      3.1945 r
+  U458/Y (AOI222X1_RVT)                            0.3005      3.4950 f
+  U472/CO (FADDX1_RVT)                             0.1633      3.6584 f
+  U460/Y (INVX0_RVT)                               0.1079      3.7662 r
+  U461/Y (AO222X1_RVT)                             0.2818      4.0481 r
+  U462/Y (AO222X1_RVT)                             0.2556      4.3037 r
+  U463/Y (XOR2X1_RVT)                              0.2866      4.5903 f
+  ctmTdsLR_1_81/Y (XOR3X1_RVT)                     0.1794      4.7697 r
+  U466/Y (XOR2X1_RVT)                              0.2646      5.0343 f
+  U467/Y (AO22X1_RVT)                              0.1779      5.2122 f
+  MatrixC_reg[47]/RSTB (DFFSSRX1_RVT)              0.0000      5.2122 f
+  data arrival time                                            5.2122
+
+  clock Clock (rise edge)                         10.0000     10.0000
+  clock network delay (propagated)                 0.0045     10.0045
+  MatrixC_reg[47]/CLK (DFFSSRX1_RVT)               0.0000     10.0045 r
+  clock uncertainty                               -0.2000      9.8045
+  library setup time                              -0.2369      9.5676
+  data required time                                           9.5676
+  ----------------------------------------------------------------------------
+  data required time                                           9.5676
+  data arrival time                                           -5.2122
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  4.3555
+
+
+
+  Startpoint: MatrixA[14] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[39] (rising edge-triggered flip-flop clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  input external delay                             2.0000      2.0041 f
+  MatrixA[14] (in)                                 0.0000      2.0041 f
+  U495/Y (AND4X1_RVT)                              0.3366      2.3407 f
+  ctmTdsLR_2_39/Y (NOR2X1_RVT)                     0.1885      2.5293 r
+  intadd_4/U6/S (FADDX1_RVT)                       0.3071      2.8364 f
+  intadd_40/U2/S (FADDX1_RVT)                      0.3669      3.2033 r
+  U558/Y (AOI222X1_RVT)                            0.2972      3.5005 f
+  U572/CO (FADDX1_RVT)                             0.1643      3.6648 f
+  U560/Y (INVX0_RVT)                               0.1105      3.7753 r
+  U561/Y (AO222X1_RVT)                             0.2776      4.0529 r
+  U562/Y (AO222X1_RVT)                             0.2533      4.3062 r
+  U563/Y (XOR2X1_RVT)                              0.2820      4.5882 f
+  ctmTdsLR_1_82/Y (XOR3X1_RVT)                     0.1842      4.7724 r
+  U566/Y (XOR2X1_RVT)                              0.2621      5.0344 f
+  U567/Y (AO22X1_RVT)                              0.1735      5.2080 f
+  MatrixC_reg[39]/RSTB (DFFSSRX1_RVT)              0.0000      5.2080 f
+  data arrival time                                            5.2080
+
+  clock Clock (rise edge)                         10.0000     10.0000
+  clock network delay (propagated)                 0.0045     10.0045
+  MatrixC_reg[39]/CLK (DFFSSRX1_RVT)               0.0000     10.0045 r
+  clock uncertainty                               -0.2000      9.8045
+  library setup time                              -0.2363      9.5683
+  data required time                                           9.5683
+  ----------------------------------------------------------------------------
+  data required time                                           9.5683
+  data arrival time                                           -5.2080
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  4.3603
+
+
+
+  Startpoint: MatrixA[9] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[14] (rising edge-triggered flip-flop clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  input external delay                             2.0000      2.0041 f
+  MatrixA[9] (in)                                  0.0000      2.0041 f
+  U805/Y (AND2X1_RVT)                              0.2157      2.2198 f
+  U809/S (FADDX1_RVT)                              0.3298      2.5496 r
+  intadd_12/U4/S (FADDX1_RVT)                      0.3083      2.8579 f
+  intadd_43/U2/S (FADDX1_RVT)                      0.3411      3.1990 r
+  U858/Y (AOI222X1_RVT)                            0.3039      3.5029 f
+  U872/CO (FADDX1_RVT)                             0.1684      3.6713 f
+  U860/Y (INVX0_RVT)                               0.1089      3.7802 r
+  U861/Y (AO222X1_RVT)                             0.2737      4.0539 r
+  U868/S (FADDX1_RVT)                              0.3341      4.3880 f
+  U869/Y (AO22X1_RVT)                              0.2048      4.5928 f
+  MatrixC_reg[14]/RSTB (DFFSSRX1_RVT)              0.0000      4.5929 f
+  data arrival time                                            4.5929
+
+  clock Clock (rise edge)                         10.0000     10.0000
+  clock network delay (propagated)                 0.0045     10.0045
+  MatrixC_reg[14]/CLK (DFFSSRX1_RVT)               0.0000     10.0045 r
+  clock uncertainty                               -0.2000      9.8045
+  library setup time                              -0.2383      9.5662
+  data required time                                           9.5661
+  ----------------------------------------------------------------------------
+  data required time                                           9.5661
+  data arrival time                                           -4.5929
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  4.9733
+
+
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 10
+        -report_by design
+Design : mma
+Version: W-2024.09-SP1
+****************************************
+
+  Startpoint: Done_reg (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: Done (output port clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0000      0.0000
+
+  Done_reg/CLK (DFFSSRX1_RVT)                      0.0000      0.0000 r
+  Done_reg/Q (DFFSSRX1_RVT)                        0.2905      0.2905 f
+  Done (out)                                       0.0000      0.2905 f
+  data arrival time                                            0.2905
+
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  clock uncertainty                                0.0200      0.0241
+  output external delay                            0.0000      0.0241
+  data required time                                           0.0241
+  ----------------------------------------------------------------------------
+  data required time                                           0.0241
+  data arrival time                                           -0.2905
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  0.2664
+
+
+
+  Startpoint: MatrixC_reg[65] (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: MatrixC[65] (output port clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0003      0.0003
+
+  MatrixC_reg[65]/CLK (DFFSSRX1_RVT)               0.0000      0.0003 r
+  MatrixC_reg[65]/Q (DFFSSRX1_RVT)                 0.2968      0.2972 f
+  MatrixC[65] (out)                                0.0000      0.2972 f
+  data arrival time                                            0.2972
+
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  clock uncertainty                                0.0200      0.0241
+  output external delay                            0.0000      0.0241
+  data required time                                           0.0241
+  ----------------------------------------------------------------------------
+  data required time                                           0.0241
+  data arrival time                                           -0.2972
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  0.2731
+
+
+
+  Startpoint: MatrixC_reg[27] (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: MatrixC[27] (output port clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0002      0.0002
+
+  MatrixC_reg[27]/CLK (DFFSSRX1_RVT)               0.0000      0.0002 r
+  MatrixC_reg[27]/Q (DFFSSRX1_RVT)                 0.2991      0.2992 f
+  MatrixC[27] (out)                                0.0000      0.2992 f
+  data arrival time                                            0.2992
+
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  clock uncertainty                                0.0200      0.0241
+  output external delay                            0.0000      0.0241
+  data required time                                           0.0241
+  ----------------------------------------------------------------------------
+  data required time                                           0.0241
+  data arrival time                                           -0.2992
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  0.2752
+
+
+
+  Startpoint: MatrixC_reg[30] (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: MatrixC[30] (output port clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0000      0.0000
+
+  MatrixC_reg[30]/CLK (DFFSSRX1_RVT)               0.0000      0.0000 r
+  MatrixC_reg[30]/Q (DFFSSRX1_RVT)                 0.3000      0.3000 f
+  MatrixC[30] (out)                                0.0000      0.3001 f
+  data arrival time                                            0.3001
+
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  clock uncertainty                                0.0200      0.0241
+  output external delay                            0.0000      0.0241
+  data required time                                           0.0241
+  ----------------------------------------------------------------------------
+  data required time                                           0.0241
+  data arrival time                                           -0.3001
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  0.2760
+
+
+
+  Startpoint: MatrixC_reg[18] (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: MatrixC[18] (output port clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0012      0.0012
+
+  MatrixC_reg[18]/CLK (DFFSSRX1_RVT)               0.0000      0.0012 r
+  MatrixC_reg[18]/Q (DFFSSRX1_RVT)                 0.3000      0.3012 f
+  MatrixC[18] (out)                                0.0000      0.3012 f
+  data arrival time                                            0.3012
+
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  clock uncertainty                                0.0200      0.0241
+  output external delay                            0.0000      0.0241
+  data required time                                           0.0241
+  ----------------------------------------------------------------------------
+  data required time                                           0.0241
+  data arrival time                                           -0.3012
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  0.2771
+
+
+
+  Startpoint: MatrixC_reg[5] (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: MatrixC[5] (output port clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0010      0.0010
+
+  MatrixC_reg[5]/CLK (DFFSSRX1_RVT)                0.0000      0.0010 r
+  MatrixC_reg[5]/Q (DFFSSRX1_RVT)                  0.3014      0.3025 f
+  MatrixC[5] (out)                                 0.0000      0.3025 f
+  data arrival time                                            0.3025
+
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  clock uncertainty                                0.0200      0.0241
+  output external delay                            0.0000      0.0241
+  data required time                                           0.0241
+  ----------------------------------------------------------------------------
+  data required time                                           0.0241
+  data arrival time                                           -0.3025
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  0.2784
+
+
+
+  Startpoint: MatrixC_reg[26] (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: MatrixC[26] (output port clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0001      0.0001
+
+  MatrixC_reg[26]/CLK (DFFSSRX1_RVT)               0.0000      0.0001 r
+  MatrixC_reg[26]/Q (DFFSSRX1_RVT)                 0.3029      0.3029 f
+  MatrixC[26] (out)                                0.0000      0.3030 f
+  data arrival time                                            0.3030
+
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  clock uncertainty                                0.0200      0.0241
+  output external delay                            0.0000      0.0241
+  data required time                                           0.0241
+  ----------------------------------------------------------------------------
+  data required time                                           0.0241
+  data arrival time                                           -0.3030
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  0.2789
+
+
+
+  Startpoint: MatrixC_reg[23] (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: MatrixC[23] (output port clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0012      0.0012
+
+  MatrixC_reg[23]/CLK (DFFSSRX1_RVT)               0.0000      0.0012 r
+  MatrixC_reg[23]/Q (DFFSSRX1_RVT)                 0.3032      0.3044 f
+  MatrixC[23] (out)                                0.0000      0.3044 f
+  data arrival time                                            0.3044
+
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  clock uncertainty                                0.0200      0.0241
+  output external delay                            0.0000      0.0241
+  data required time                                           0.0241
+  ----------------------------------------------------------------------------
+  data required time                                           0.0241
+  data arrival time                                           -0.3044
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  0.2803
+
+
+
+  Startpoint: MatrixC_reg[17] (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: MatrixC[17] (output port clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0012      0.0012
+
+  MatrixC_reg[17]/CLK (DFFSSRX1_RVT)               0.0000      0.0012 r
+  MatrixC_reg[17]/Q (DFFSSRX1_RVT)                 0.3036      0.3048 f
+  MatrixC[17] (out)                                0.0000      0.3048 f
+  data arrival time                                            0.3048
+
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  clock uncertainty                                0.0200      0.0241
+  output external delay                            0.0000      0.0241
+  data required time                                           0.0241
+  ----------------------------------------------------------------------------
+  data required time                                           0.0241
+  data arrival time                                           -0.3048
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  0.2807
+
+
+
+  Startpoint: MatrixC_reg[34] (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: MatrixC[34] (output port clocked by Clock)
+  Mode: func
+  Corner: nom
+  Scenario: func.nom
+  Path Group: **reg2out_default**
+  Path Type: min
+
+  Point                                             Incr        Path  
+  ----------------------------------------------------------------------------
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0045      0.0045
+
+  MatrixC_reg[34]/CLK (DFFSSRX1_RVT)               0.0000      0.0045 r
+  MatrixC_reg[34]/Q (DFFSSRX1_RVT)                 0.3009      0.3055 f
+  MatrixC[34] (out)                                0.0000      0.3055 f
+  data arrival time                                            0.3055
+
+  clock Clock (rise edge)                          0.0000      0.0000
+  clock network delay (propagated)                 0.0041      0.0041
+  clock uncertainty                                0.0200      0.0241
+  output external delay                            0.0000      0.0241
+  data required time                                           0.0241
+  ----------------------------------------------------------------------------
+  data required time                                           0.0241
+  data arrival time                                           -0.3055
+  ----------------------------------------------------------------------------
+  slack (MET)                                                  0.2814
+
+
+1
