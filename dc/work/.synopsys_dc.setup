@@ -1,0 +1,23 @@
+###############################################################################
+# .synopsys_dc.setup
+# Synopsys Design Compiler setup for MMA
+# Tool target: DC W-2024.09-SP1
+###############################################################################
+
+set PROJECT_ROOT [file normalize ../..]
+set DESIGN_NAME  mma
+set PDK_PATH     $PROJECT_ROOT/ref
+
+set TARGET_DB    $PDK_PATH/lib/stdcell_rvt/saed32rvt_tt0p85v25c.db
+
+set_app_var search_path [list . ../source ../scripts $PDK_PATH/lib/stdcell_rvt]
+set_app_var target_library [list $TARGET_DB]
+set_app_var link_library   [list "*" $TARGET_DB]
+
+if {![file exists WORK]} {
+    file mkdir WORK
+}
+
+define_design_lib WORK -path ./WORK
+
+set_host_options -max_cores 4
