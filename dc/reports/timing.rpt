@@ -1,0 +1,921 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : mma
+Version: W-2024.09-SP1
+****************************************
+
+Operating Conditions: tt0p85v25c   Library: saed32rvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: MatrixB[26]
+              (input port clocked by Clock)
+  Endpoint: MatrixC_reg[55]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixB[26] (in)                       0.0000     2.0000 f
+  U305/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U309/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_27/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_38/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_28/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U349/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U372/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U360/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U361/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U362/Y (AO222X1_RVT)                   0.1240     3.3384 r
+  U363/Y (XOR2X1_RVT)                    0.1425     3.4808 f
+  U364/Y (XOR2X1_RVT)                    0.1390     3.6198 r
+  U365/Y (XOR2X1_RVT)                    0.1408     3.7606 f
+  U366/Y (XOR2X1_RVT)                    0.1335     3.8940 r
+  U367/Y (AO22X1_RVT)                    0.0860     3.9800 r
+  MatrixC_reg[55]/RSTB (DFFSSRX1_RVT)    0.0169     3.9969 r
+  data arrival time                                 3.9969
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[55]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1136     9.6864
+  data required time                                9.6864
+  -----------------------------------------------------------
+  data required time                                9.6864
+  data arrival time                                -3.9969
+  -----------------------------------------------------------
+  slack (MET)                                       5.6895
+
+
+  Startpoint: MatrixA[9] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[23]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[9] (in)                        0.0000     2.0000 f
+  U705/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U709/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_15/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_42/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_16/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U749/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U772/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U760/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U761/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U762/Y (AO222X1_RVT)                   0.1240     3.3384 r
+  U763/Y (XOR2X1_RVT)                    0.1425     3.4808 f
+  U764/Y (XOR2X1_RVT)                    0.1390     3.6198 r
+  U765/Y (XOR2X1_RVT)                    0.1408     3.7606 f
+  U766/Y (XOR2X1_RVT)                    0.1335     3.8940 r
+  U767/Y (AO22X1_RVT)                    0.0860     3.9800 r
+  MatrixC_reg[23]/RSTB (DFFSSRX1_RVT)    0.0169     3.9969 r
+  data arrival time                                 3.9969
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[23]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1136     9.6864
+  data required time                                9.6864
+  -----------------------------------------------------------
+  data required time                                9.6864
+  data arrival time                                -3.9969
+  -----------------------------------------------------------
+  slack (MET)                                       5.6895
+
+
+  Startpoint: MatrixA[9] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[15]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[9] (in)                        0.0000     2.0000 f
+  U805/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U809/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_12/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_43/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_13/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U849/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U872/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U860/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U861/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U862/Y (AO222X1_RVT)                   0.1240     3.3384 r
+  U863/Y (XOR2X1_RVT)                    0.1425     3.4808 f
+  U864/Y (XOR2X1_RVT)                    0.1390     3.6198 r
+  U865/Y (XOR2X1_RVT)                    0.1408     3.7606 f
+  U866/Y (XOR2X1_RVT)                    0.1335     3.8940 r
+  U867/Y (AO22X1_RVT)                    0.0860     3.9800 r
+  MatrixC_reg[15]/RSTB (DFFSSRX1_RVT)    0.0169     3.9969 r
+  data arrival time                                 3.9969
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[15]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1136     9.6864
+  data required time                                9.6864
+  -----------------------------------------------------------
+  data required time                                9.6864
+  data arrival time                                -3.9969
+  -----------------------------------------------------------
+  slack (MET)                                       5.6895
+
+
+  Startpoint: MatrixA[33]
+              (input port clocked by Clock)
+  Endpoint: MatrixC_reg[71]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[33] (in)                       0.0000     2.0000 f
+  U101/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U105/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_33/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_36/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_34/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U146/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U172/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U157/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U158/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U159/Y (AO222X1_RVT)                   0.1240     3.3384 r
+  U160/Y (XOR2X1_RVT)                    0.1425     3.4808 f
+  U161/Y (XOR2X1_RVT)                    0.1390     3.6198 r
+  U162/Y (XOR2X1_RVT)                    0.1408     3.7606 f
+  U163/Y (XOR2X1_RVT)                    0.1335     3.8940 r
+  U166/Y (AO22X1_RVT)                    0.0860     3.9800 r
+  MatrixC_reg[71]/RSTB (DFFSSRX1_RVT)    0.0169     3.9969 r
+  data arrival time                                 3.9969
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[71]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1130     9.6870
+  data required time                                9.6870
+  -----------------------------------------------------------
+  data required time                                9.6870
+  data arrival time                                -3.9969
+  -----------------------------------------------------------
+  slack (MET)                                       5.6901
+
+
+  Startpoint: MatrixA[9] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[7]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[9] (in)                        0.0000     2.0000 f
+  U905/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U909/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_9/U4/S (FADDX1_RVT)             0.1861     2.5408 f
+  intadd_44/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_10/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U949/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U972/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U960/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U961/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U962/Y (AO222X1_RVT)                   0.1240     3.3384 r
+  U963/Y (XOR2X1_RVT)                    0.1425     3.4808 f
+  U964/Y (XOR2X1_RVT)                    0.1390     3.6198 r
+  U965/Y (XOR2X1_RVT)                    0.1408     3.7606 f
+  U966/Y (XOR2X1_RVT)                    0.1335     3.8940 r
+  U967/Y (AO22X1_RVT)                    0.0860     3.9800 r
+  MatrixC_reg[7]/RSTB (DFFSSRX1_RVT)     0.0169     3.9969 r
+  data arrival time                                 3.9969
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[7]/CLK (DFFSSRX1_RVT)      0.0000     9.8000 r
+  library setup time                    -0.1130     9.6870
+  data required time                                9.6870
+  -----------------------------------------------------------
+  data required time                                9.6870
+  data arrival time                                -3.9969
+  -----------------------------------------------------------
+  slack (MET)                                       5.6901
+
+
+  Startpoint: MatrixB[30]
+              (input port clocked by Clock)
+  Endpoint: MatrixC_reg[63]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixB[30] (in)                       0.0000     2.0000 f
+  U205/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U209/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_30/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_37/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_31/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U249/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U272/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U260/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U261/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U262/Y (AO222X1_RVT)                   0.1240     3.3384 r
+  U263/Y (XOR2X1_RVT)                    0.1425     3.4808 f
+  U264/Y (XOR2X1_RVT)                    0.1390     3.6198 r
+  U265/Y (XOR2X1_RVT)                    0.1408     3.7606 f
+  U266/Y (XOR2X1_RVT)                    0.1335     3.8940 r
+  U267/Y (AO22X1_RVT)                    0.0860     3.9800 r
+  MatrixC_reg[63]/RSTB (DFFSSRX1_RVT)    0.0169     3.9969 r
+  data arrival time                                 3.9969
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[63]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1129     9.6871
+  data required time                                9.6871
+  -----------------------------------------------------------
+  data required time                                9.6871
+  data arrival time                                -3.9969
+  -----------------------------------------------------------
+  slack (MET)                                       5.6902
+
+
+  Startpoint: MatrixA[21]
+              (input port clocked by Clock)
+  Endpoint: MatrixC_reg[39]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[21] (in)                       0.0000     2.0000 f
+  U505/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U509/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_21/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_40/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_22/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U549/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U572/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U560/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U561/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U562/Y (AO222X1_RVT)                   0.1240     3.3384 r
+  U563/Y (XOR2X1_RVT)                    0.1425     3.4808 f
+  U564/Y (XOR2X1_RVT)                    0.1390     3.6198 r
+  U565/Y (XOR2X1_RVT)                    0.1408     3.7606 f
+  U566/Y (XOR2X1_RVT)                    0.1335     3.8940 r
+  U567/Y (AO22X1_RVT)                    0.0860     3.9800 r
+  MatrixC_reg[39]/RSTB (DFFSSRX1_RVT)    0.0169     3.9969 r
+  data arrival time                                 3.9969
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[39]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1129     9.6871
+  data required time                                9.6871
+  -----------------------------------------------------------
+  data required time                                9.6871
+  data arrival time                                -3.9969
+  -----------------------------------------------------------
+  slack (MET)                                       5.6902
+
+
+  Startpoint: MatrixA[21]
+              (input port clocked by Clock)
+  Endpoint: MatrixC_reg[31]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[21] (in)                       0.0000     2.0000 f
+  U605/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U609/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_18/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_41/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_19/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U649/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U672/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U660/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U661/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U662/Y (AO222X1_RVT)                   0.1240     3.3384 r
+  U663/Y (XOR2X1_RVT)                    0.1425     3.4808 f
+  U664/Y (XOR2X1_RVT)                    0.1390     3.6198 r
+  U665/Y (XOR2X1_RVT)                    0.1408     3.7606 f
+  U666/Y (XOR2X1_RVT)                    0.1335     3.8940 r
+  U667/Y (AO22X1_RVT)                    0.0860     3.9800 r
+  MatrixC_reg[31]/RSTB (DFFSSRX1_RVT)    0.0169     3.9969 r
+  data arrival time                                 3.9969
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[31]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1129     9.6871
+  data required time                                9.6871
+  -----------------------------------------------------------
+  data required time                                9.6871
+  data arrival time                                -3.9969
+  -----------------------------------------------------------
+  slack (MET)                                       5.6902
+
+
+  Startpoint: MatrixA[21]
+              (input port clocked by Clock)
+  Endpoint: MatrixC_reg[47]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[21] (in)                       0.0000     2.0000 f
+  U405/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U409/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_24/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_39/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_25/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U449/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U472/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U460/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U461/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U462/Y (AO222X1_RVT)                   0.1240     3.3384 r
+  U463/Y (XOR2X1_RVT)                    0.1425     3.4808 f
+  U464/Y (XOR2X1_RVT)                    0.1390     3.6198 r
+  U465/Y (XOR2X1_RVT)                    0.1408     3.7606 f
+  U466/Y (XOR2X1_RVT)                    0.1335     3.8940 r
+  U467/Y (AO22X1_RVT)                    0.0860     3.9800 r
+  MatrixC_reg[47]/RSTB (DFFSSRX1_RVT)    0.0169     3.9969 r
+  data arrival time                                 3.9969
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[47]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1129     9.6871
+  data required time                                9.6871
+  -----------------------------------------------------------
+  data required time                                9.6871
+  data arrival time                                -3.9969
+  -----------------------------------------------------------
+  slack (MET)                                       5.6902
+
+
+  Startpoint: MatrixA[21]
+              (input port clocked by Clock)
+  Endpoint: MatrixC_reg[46]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[21] (in)                       0.0000     2.0000 f
+  U405/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U409/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_24/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_39/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_25/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U449/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U472/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U460/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U461/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U468/S (FADDX1_RVT)                    0.1710     3.3854 f
+  U469/Y (AO22X1_RVT)                    0.0880     3.4734 f
+  MatrixC_reg[46]/RSTB (DFFSSRX1_RVT)    0.0168     3.4902 f
+  data arrival time                                 3.4902
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[46]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1023     9.6977
+  data required time                                9.6977
+  -----------------------------------------------------------
+  data required time                                9.6977
+  data arrival time                                -3.4902
+  -----------------------------------------------------------
+  slack (MET)                                       6.2075
+
+
+  Startpoint: MatrixA[9] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[6]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[9] (in)                        0.0000     2.0000 f
+  U905/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U909/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_9/U4/S (FADDX1_RVT)             0.1861     2.5408 f
+  intadd_44/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_10/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U949/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U972/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U960/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U961/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U968/S (FADDX1_RVT)                    0.1710     3.3854 f
+  U969/Y (AO22X1_RVT)                    0.0880     3.4734 f
+  MatrixC_reg[6]/RSTB (DFFSSRX1_RVT)     0.0168     3.4902 f
+  data arrival time                                 3.4902
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[6]/CLK (DFFSSRX1_RVT)      0.0000     9.8000 r
+  library setup time                    -0.1023     9.6977
+  data required time                                9.6977
+  -----------------------------------------------------------
+  data required time                                9.6977
+  data arrival time                                -3.4902
+  -----------------------------------------------------------
+  slack (MET)                                       6.2075
+
+
+  Startpoint: MatrixA[33]
+              (input port clocked by Clock)
+  Endpoint: MatrixC_reg[70]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[33] (in)                       0.0000     2.0000 f
+  U101/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U105/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_33/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_36/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_34/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U146/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U172/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U157/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U158/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U167/S (FADDX1_RVT)                    0.1710     3.3854 f
+  U169/Y (AO22X1_RVT)                    0.0880     3.4734 f
+  MatrixC_reg[70]/RSTB (DFFSSRX1_RVT)    0.0168     3.4902 f
+  data arrival time                                 3.4902
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[70]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1019     9.6981
+  data required time                                9.6981
+  -----------------------------------------------------------
+  data required time                                9.6981
+  data arrival time                                -3.4902
+  -----------------------------------------------------------
+  slack (MET)                                       6.2079
+
+
+  Startpoint: MatrixB[30]
+              (input port clocked by Clock)
+  Endpoint: MatrixC_reg[62]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixB[30] (in)                       0.0000     2.0000 f
+  U205/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U209/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_30/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_37/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_31/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U249/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U272/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U260/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U261/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U268/S (FADDX1_RVT)                    0.1710     3.3854 f
+  U269/Y (AO22X1_RVT)                    0.0880     3.4734 f
+  MatrixC_reg[62]/RSTB (DFFSSRX1_RVT)    0.0168     3.4902 f
+  data arrival time                                 3.4902
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[62]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1019     9.6981
+  data required time                                9.6981
+  -----------------------------------------------------------
+  data required time                                9.6981
+  data arrival time                                -3.4902
+  -----------------------------------------------------------
+  slack (MET)                                       6.2079
+
+
+  Startpoint: MatrixB[26]
+              (input port clocked by Clock)
+  Endpoint: MatrixC_reg[54]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixB[26] (in)                       0.0000     2.0000 f
+  U305/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U309/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_27/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_38/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_28/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U349/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U372/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U360/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U361/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U368/S (FADDX1_RVT)                    0.1710     3.3854 f
+  U369/Y (AO22X1_RVT)                    0.0880     3.4734 f
+  MatrixC_reg[54]/RSTB (DFFSSRX1_RVT)    0.0168     3.4902 f
+  data arrival time                                 3.4902
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[54]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1019     9.6981
+  data required time                                9.6981
+  -----------------------------------------------------------
+  data required time                                9.6981
+  data arrival time                                -3.4902
+  -----------------------------------------------------------
+  slack (MET)                                       6.2079
+
+
+  Startpoint: MatrixA[21]
+              (input port clocked by Clock)
+  Endpoint: MatrixC_reg[38]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[21] (in)                       0.0000     2.0000 f
+  U505/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U509/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_21/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_40/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_22/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U549/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U572/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U560/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U561/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U568/S (FADDX1_RVT)                    0.1710     3.3854 f
+  U569/Y (AO22X1_RVT)                    0.0880     3.4734 f
+  MatrixC_reg[38]/RSTB (DFFSSRX1_RVT)    0.0168     3.4902 f
+  data arrival time                                 3.4902
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[38]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1019     9.6981
+  data required time                                9.6981
+  -----------------------------------------------------------
+  data required time                                9.6981
+  data arrival time                                -3.4902
+  -----------------------------------------------------------
+  slack (MET)                                       6.2079
+
+
+  Startpoint: MatrixA[21]
+              (input port clocked by Clock)
+  Endpoint: MatrixC_reg[30]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[21] (in)                       0.0000     2.0000 f
+  U605/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U609/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_18/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_41/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_19/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U649/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U672/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U660/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U661/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U668/S (FADDX1_RVT)                    0.1710     3.3854 f
+  U669/Y (AO22X1_RVT)                    0.0880     3.4734 f
+  MatrixC_reg[30]/RSTB (DFFSSRX1_RVT)    0.0168     3.4902 f
+  data arrival time                                 3.4902
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[30]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1019     9.6981
+  data required time                                9.6981
+  -----------------------------------------------------------
+  data required time                                9.6981
+  data arrival time                                -3.4902
+  -----------------------------------------------------------
+  slack (MET)                                       6.2079
+
+
+  Startpoint: MatrixA[9] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[22]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[9] (in)                        0.0000     2.0000 f
+  U705/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U709/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_15/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_42/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_16/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U749/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U772/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U760/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U761/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U768/S (FADDX1_RVT)                    0.1710     3.3854 f
+  U769/Y (AO22X1_RVT)                    0.0880     3.4734 f
+  MatrixC_reg[22]/RSTB (DFFSSRX1_RVT)    0.0168     3.4902 f
+  data arrival time                                 3.4902
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[22]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1019     9.6981
+  data required time                                9.6981
+  -----------------------------------------------------------
+  data required time                                9.6981
+  data arrival time                                -3.4902
+  -----------------------------------------------------------
+  slack (MET)                                       6.2079
+
+
+  Startpoint: MatrixA[9] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[14]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[9] (in)                        0.0000     2.0000 f
+  U805/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U809/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_12/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_43/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_13/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U849/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U872/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U860/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U861/Y (AO222X1_RVT)                   0.1333     3.2144 r
+  U868/S (FADDX1_RVT)                    0.1710     3.3854 f
+  U869/Y (AO22X1_RVT)                    0.0880     3.4734 f
+  MatrixC_reg[14]/RSTB (DFFSSRX1_RVT)    0.0168     3.4902 f
+  data arrival time                                 3.4902
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[14]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1019     9.6981
+  data required time                                9.6981
+  -----------------------------------------------------------
+  data required time                                9.6981
+  data arrival time                                -3.4902
+  -----------------------------------------------------------
+  slack (MET)                                       6.2079
+
+
+  Startpoint: MatrixA[21]
+              (input port clocked by Clock)
+  Endpoint: MatrixC_reg[45]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[21] (in)                       0.0000     2.0000 f
+  U405/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U409/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_24/U4/S (FADDX1_RVT)            0.1861     2.5408 f
+  intadd_39/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_25/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U449/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U472/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U460/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U470/S (FADDX1_RVT)                    0.1673     3.2484 f
+  U471/Y (AO22X1_RVT)                    0.0879     3.3363 f
+  MatrixC_reg[45]/RSTB (DFFSSRX1_RVT)    0.0168     3.3531 f
+  data arrival time                                 3.3531
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[45]/CLK (DFFSSRX1_RVT)     0.0000     9.8000 r
+  library setup time                    -0.1023     9.6977
+  data required time                                9.6977
+  -----------------------------------------------------------
+  data required time                                9.6977
+  data arrival time                                -3.3531
+  -----------------------------------------------------------
+  slack (MET)                                       6.3446
+
+
+  Startpoint: MatrixA[9] (input port clocked by Clock)
+  Endpoint: MatrixC_reg[5]
+            (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mma                8000                  saed32rvt_tt0p85v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clock (rise edge)                0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  input external delay                   2.0000     2.0000 f
+  MatrixA[9] (in)                        0.0000     2.0000 f
+  U905/Y (AND2X1_RVT)                    0.1523     2.1523 f
+  U909/S (FADDX1_RVT)                    0.2024     2.3548 r
+  intadd_9/U4/S (FADDX1_RVT)             0.1861     2.5408 f
+  intadd_44/U2/CO (FADDX1_RVT)           0.1305     2.6713 f
+  intadd_10/U2/S (FADDX1_RVT)            0.1841     2.8555 r
+  U949/Y (INVX0_RVT)                     0.0457     2.9011 f
+  U972/CO (FADDX1_RVT)                   0.1230     3.0241 f
+  U960/Y (INVX0_RVT)                     0.0569     3.0811 r
+  U970/S (FADDX1_RVT)                    0.1673     3.2484 f
+  U971/Y (AO22X1_RVT)                    0.0879     3.3363 f
+  MatrixC_reg[5]/RSTB (DFFSSRX1_RVT)     0.0168     3.3531 f
+  data arrival time                                 3.3531
+
+  clock Clock (rise edge)               10.0000    10.0000
+  clock network delay (ideal)            0.0000    10.0000
+  clock uncertainty                     -0.2000     9.8000
+  MatrixC_reg[5]/CLK (DFFSSRX1_RVT)      0.0000     9.8000 r
+  library setup time                    -0.1019     9.6981
+  data required time                                9.6981
+  -----------------------------------------------------------
+  data required time                                9.6981
+  data arrival time                                -3.3531
+  -----------------------------------------------------------
+  slack (MET)                                       6.3450
+
+
+1
