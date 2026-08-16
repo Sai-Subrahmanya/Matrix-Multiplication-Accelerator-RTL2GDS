@@ -1,0 +1,51 @@
+###############################################################################
+# .synopsys_icc2.setup
+# Synopsys IC Compiler II setup for MMA
+# Tool target: ICC2 W-2024.09-SP1
+###############################################################################
+
+set PROJECT_ROOT [file normalize ../..]
+set DESIGN_NAME  mma
+set PDK_PATH     $PROJECT_ROOT/ref
+
+###############################################################################
+# SAED32 RVT TT 0.85 V 25 C reference files
+###############################################################################
+
+set STD_DB       $PDK_PATH/lib/stdcell_rvt/saed32rvt_tt0p85v25c.db
+set NDM_REF_LIB  $PDK_PATH/lib/ndm/saed32_rvt.ndm
+set TECH_FILE    $PDK_PATH/tech/milkyway/saed32nm_1p9m_mw.tf
+
+set TLUPLUS_MAX  $PDK_PATH/tech/star_rcxt/saed32nm_1p9m_Cmax.tluplus
+set TLUPLUS_MIN  $PDK_PATH/tech/star_rcxt/saed32nm_1p9m_Cmin.tluplus
+set TLUPLUS_MAP  $PDK_PATH/tech/star_rcxt/saed32nm_tf_itf_tluplus.map
+
+set GDS_MAP      $PDK_PATH/tech/saed32nm_1p9m_gdsout_mw.map
+set MERGE_GDS    $PDK_PATH/tech/saed32nm_rvt_oa.gds
+
+###############################################################################
+# Search path
+###############################################################################
+
+set search_path [list \
+    . \
+    ../source \
+    ../scripts \
+    $PDK_PATH/lib/stdcell_rvt \
+]
+
+###############################################################################
+# Host options
+###############################################################################
+
+set_host_options -max_cores 4
+
+###############################################################################
+# Notes
+###############################################################################
+# ICC2 implementation scripts source ../scripts/common_setup.tcl, which defines
+# the same variables for the executable flow.
+#
+# This setup file is kept simple and project-local so ICC2 starts with the
+# correct MMA project paths.
+###############################################################################
